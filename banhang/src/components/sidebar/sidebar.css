@@ -1,0 +1,17 @@
+
+.sidebar img{
+    width: 65%;
+    display: flex;
+    margin: auto;    
+    /* padding: 15%;
+    margin-top: 50px;
+   
+    background: url("../../../public/assets/banner/banner2.jpg") center center / cover no-repeat; */
+
+}
+
+
+.banner {
+    width:100%;
+    height: auto;
+}

@@ -1,0 +1,38 @@
+.container-ship{
+    max-width: 100%;
+    display: flex;
+    /* background-color: red; */
+    /* margin: 0 100px; */
+   padding: 50px 300px;
+}
+
+.buys, .freeship, .support{
+    border: 1px solid #ccc;
+    flex: calc(10/3 );
+    text-align: center;
+}
+
+.buys, .freeship {
+    margin-right: 30px;
+}
+
+.money{
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.title{
+    margin-top: 20px;
+
+    font-weight: bold;
+}
+
+.decription{
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+
+
+

@@ -1,0 +1,80 @@
+.topbar {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    background-color: blue;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    
+}
+
+
+.logo {
+    width: 25%;
+    color: white;
+}
+
+.topbarleft {
+    flex: 3;
+}
+
+
+
+.search-input {
+    width: 100%;
+    border-radius: 12px;
+    height: 30px;
+    background-color: white;
+    align-items: center;
+    display: flex;
+}
+
+.search-icon{
+    margin-left: 10px;
+
+}
+
+.input:focus {
+    outline: none;
+}
+
+.input{
+    margin-left: 10px;
+    width: 90%;
+    border: none;
+}
+
+
+
+.topbarcenter {
+    flex: 4;
+}
+
+.topbarright{
+    flex: 3;
+    display: flex;
+    justify-content: space-around;
+}
+
+.topbarright span {
+    margin-left: 20px;
+}
+
+.tabbar-link{
+    color: white;
+}
+
+.tabbar-link ul li{ 
+    color: white;
+}
+
+
+.topbarright i {
+    margin-left: 10px;
+    color: white;
+}
+

@@ -1,0 +1,48 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import '@fortawesome/fontawesome-svg-core/styles.css';
+
+import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import Context from './components/context/context';
+import Shopcategory from './page/shopcategory';
+import Login from './page/login/Login';
+import Detail from './components/Detai/Detail';
+import Cart from './components/cart/Cart';
+const root = ReactDOM.createRoot(document.getElementById('root'));
+library.add(fas);
+
+root.render(
+    <React.StrictMode>
+<BrowserRouter>
+
+    <Context>
+    <Routes>
+        <Route path='/login' element = {<Login/>}/>
+        <Route path="/cart" element = {<Cart/>}/>
+
+        <Route path = "/" element= {<App/>} >
+
+            <Route path="/Mens" element = {<Shopcategory category = 'men'/>}/>
+            <Route path="/Womens" element = {<Shopcategory category = 'women'/>}/>
+            <Route path="/Kids" element = {<Shopcategory category = 'kid'/>}/> 
+            <Route path = '/' element = {<Navigate to = '/Mens'/>}/>
+           
+        </Route>
+        <Route path = '/detail' element= {<Detail/>}>
+                <Route path = ':ProductId' element = {<Detail/>}/>
+            </Route>
+    </Routes>
+    </Context>
+</BrowserRouter>
+</React.StrictMode>
+);
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();

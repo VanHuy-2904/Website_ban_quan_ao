@@ -1,0 +1,16 @@
+.product{
+    display: grid;
+    margin: 20px 170px;
+    /* padding-right: 100px; */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px ;
+    
+   
+}
+
+.shop-category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

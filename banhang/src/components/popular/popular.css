@@ -1,0 +1,14 @@
+
+
+.popular {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.popular hr {
+    width: 200px;
+    height: 6px;
+    background-color: red;
+}

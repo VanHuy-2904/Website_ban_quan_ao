@@ -1,0 +1,35 @@
+.Title-ul{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    list-style: none;
+}
+.Title-ul li{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.Title-ul hr{
+    border: none;
+    height: 3px;
+    background: red;
+    width: 90%;
+}
+
+ a {
+    text-decoration: none;
+    color: black;
+}
+
+.Title-ul li a:hover {
+    color: blue;
+
+}
+
+.Title-ul li a.active {
+    color: red;
+   
+}

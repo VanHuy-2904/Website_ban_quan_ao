@@ -1,0 +1,87 @@
+.main {
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.color {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 30px;
+    gap: 17px
+    
+}
+
+.color img {
+    width: 100px;
+    cursor: pointer;
+}
+
+.anh img {
+    /* margin: 10px 0; */
+    height: 530px;
+}
+
+.left {
+    display: flex;
+margin: 10px 30px;
+}
+
+.right {
+    margin-right: 50px;
+}
+
+.star {
+    margin-top: 10px;
+
+}
+
+.star img {
+    width: 15px;
+}
+
+.price {
+    align-items: center;
+    margin: 20px 0;
+}
+
+.oldprice {
+    font-size: 18px;
+    font-weight: bold;
+    color: gray;
+    text-decoration: line-through;
+}
+
+.newprice {
+    font-weight: bold;
+    color: red;
+    font-size: 20px;
+}
+.mota {
+    margin-bottom: 20px;
+}
+
+.boxsize {
+    display: flex;
+    gap: 17px;
+    margin: 20px 0;
+}
+
+.boxsize div {
+    background-color: #fbfbfb;
+    border: 1px solid #ebebeb;
+    cursor: pointer;
+    padding: 18px 24px;
+}
+
+.button button {
+    width: 200px;
+    padding: 24px 50px;
+    background-color: red;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
